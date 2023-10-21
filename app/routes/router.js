@@ -54,7 +54,7 @@ router.get("/rodas-de-conversa",
 autenticacaoMiddleware.validateJWT,
 rodaConversaControllerRead.returnPage);
 
-router.get("/cadastro", cadastroControllerRead.returnPage);
+router.get("/cadastro", cadastroControllerRead.getPage);
 router.post("/cadastro",
 regrasValidacaoMiddleware.cadastroValidationRules,
 validacaoFormulariosMiddleware.validacaoCadastro,
